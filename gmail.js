@@ -7,6 +7,8 @@ function organizeEmails() {
 
   // Search for emails in the inbox
   const inbox = GmailApp.getInboxThreads();
+  // Search for unread emails in the inbox
+  // const inbox = GmailApp.search('is:unread in:inbox');
 
   // Iterate through each email
   for (const thread of inbox) {
